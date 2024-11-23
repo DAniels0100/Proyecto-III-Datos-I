@@ -7,12 +7,24 @@
       "RelativeMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|solutionrelative:proyecto grafos\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|c:\\users\\j2005\\onedrive\\documentos\\github\\proyecto-iii-datos-i\\proyecto grafos\\proyecto grafos\\proyecto grafos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|solutionrelative:proyecto grafos\\proyecto grafos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|c:\\users\\j2005\\onedrive\\documentos\\github\\proyecto-iii-datos-i\\proyecto grafos\\proyecto grafos\\models\\avion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|solutionrelative:proyecto grafos\\models\\avion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|c:\\users\\j2005\\onedrive\\documentos\\github\\proyecto-iii-datos-i\\proyecto grafos\\proyecto grafos\\graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|solutionrelative:proyecto grafos\\graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|c:\\users\\j2005\\onedrive\\documentos\\github\\proyecto-iii-datos-i\\proyecto grafos\\proyecto grafos\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|solutionrelative:proyecto grafos\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|c:\\users\\j2005\\onedrive\\documentos\\github\\proyecto-iii-datos-i\\proyecto grafos\\proyecto grafos\\models\\aeropuerto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|solutionrelative:proyecto grafos\\models\\aeropuerto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|c:\\users\\j2005\\onedrive\\documentos\\github\\proyecto-iii-datos-i\\proyecto grafos\\proyecto grafos\\proyecto grafos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|solutionrelative:proyecto grafos\\proyecto grafos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|c:\\users\\j2005\\onedrive\\documentos\\github\\proyecto-iii-datos-i\\proyecto grafos\\proyecto grafos\\panelaviones.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -25,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|c:\\users\\j2005\\onedrive\\documentos\\github\\proyecto-iii-datos-i\\proyecto grafos\\proyecto grafos\\controlbateriaantiaerea.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|solutionrelative:proyecto grafos\\controlbateriaantiaerea.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|c:\\users\\j2005\\onedrive\\documentos\\github\\proyecto-iii-datos-i\\proyecto grafos\\proyecto grafos\\models\\aeropuerto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|solutionrelative:proyecto grafos\\models\\aeropuerto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|c:\\users\\j2005\\onedrive\\documentos\\github\\proyecto-iii-datos-i\\proyecto grafos\\proyecto grafos\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,10 +53,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|c:\\users\\j2005\\onedrive\\documentos\\github\\proyecto-iii-datos-i\\proyecto grafos\\proyecto grafos\\viewmodels\\bateriaantiaereaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|solutionrelative:proyecto grafos\\viewmodels\\bateriaantiaereaviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|c:\\users\\j2005\\onedrive\\documentos\\github\\proyecto-iii-datos-i\\proyecto grafos\\proyecto grafos\\graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|solutionrelative:proyecto grafos\\graph.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|c:\\users\\j2005\\onedrive\\documentos\\github\\proyecto-iii-datos-i\\proyecto grafos\\proyecto grafos\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -73,10 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|c:\\users\\j2005\\onedrive\\documentos\\github\\proyecto-iii-datos-i\\proyecto grafos\\proyecto grafos\\models\\ruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|solutionrelative:proyecto grafos\\models\\ruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|c:\\users\\j2005\\onedrive\\documentos\\github\\proyecto-iii-datos-i\\proyecto grafos\\proyecto grafos\\models\\avion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|solutionrelative:proyecto grafos\\models\\avion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,30 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ControlBateriaAntiaerea.xaml",
-              "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\ControlBateriaAntiaerea.xaml",
-              "RelativeDocumentMoniker": "Proyecto grafos\\ControlBateriaAntiaerea.xaml",
-              "ToolTip": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\ControlBateriaAntiaerea.xaml",
-              "RelativeToolTip": "Proyecto grafos\\ControlBateriaAntiaerea.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-23T02:42:03.728Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GeneradorGrafoService.cs",
-              "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Services\\GeneradorGrafoService.cs",
-              "RelativeDocumentMoniker": "Proyecto grafos\\Services\\GeneradorGrafoService.cs",
-              "ToolTip": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Services\\GeneradorGrafoService.cs",
-              "RelativeToolTip": "Proyecto grafos\\Services\\GeneradorGrafoService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T02:39:26.071Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Mapa.cs",
               "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Models\\Mapa.cs",
               "RelativeDocumentMoniker": "Proyecto grafos\\Models\\Mapa.cs",
@@ -129,18 +106,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Proyecto grafos\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\MainWindow.xaml",
               "RelativeToolTip": "Proyecto grafos\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-23T02:44:02.611Z"
+              "WhenOpened": "2024-11-23T02:44:02.611Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "Proyecto grafos\\AssemblyInfo.cs",
@@ -152,7 +130,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "PanelAviones.xaml",
               "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\PanelAviones.xaml",
               "RelativeDocumentMoniker": "Proyecto grafos\\PanelAviones.xaml",
@@ -169,14 +147,14 @@
               "RelativeDocumentMoniker": "Proyecto grafos\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\MainWindow.xaml.cs",
               "RelativeToolTip": "Proyecto grafos\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAALYAAAAAAAAAAAAAwNIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T02:45:34.239Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Aeropuerto.cs",
               "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Models\\Aeropuerto.cs",
               "RelativeDocumentMoniker": "Proyecto grafos\\Models\\Aeropuerto.cs",
@@ -184,11 +162,37 @@
               "RelativeToolTip": "Proyecto grafos\\Models\\Aeropuerto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T02:36:24.798Z"
+              "WhenOpened": "2024-11-23T02:36:24.798Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "Graph.cs",
+              "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Graph.cs",
+              "RelativeDocumentMoniker": "Proyecto grafos\\Graph.cs",
+              "ToolTip": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Graph.cs",
+              "RelativeToolTip": "Proyecto grafos\\Graph.cs",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAgwHMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T00:48:28.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "GeneradorGrafoService.cs",
+              "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Services\\GeneradorGrafoService.cs",
+              "RelativeDocumentMoniker": "Proyecto grafos\\Services\\GeneradorGrafoService.cs",
+              "ToolTip": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Services\\GeneradorGrafoService.cs",
+              "RelativeToolTip": "Proyecto grafos\\Services\\GeneradorGrafoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T02:39:26.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Proyecto grafos.csproj",
               "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Proyecto grafos.csproj",
               "RelativeDocumentMoniker": "Proyecto grafos\\Proyecto grafos.csproj",
@@ -200,7 +204,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "Avion.cs",
+              "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Models\\Avion.cs",
+              "RelativeDocumentMoniker": "Proyecto grafos\\Models\\Avion.cs",
+              "ToolTip": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Models\\Avion.cs",
+              "RelativeToolTip": "Proyecto grafos\\Models\\Avion.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAQwFAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T02:36:53.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ControlBateriaAntiaerea.xaml",
+              "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\ControlBateriaAntiaerea.xaml",
+              "RelativeDocumentMoniker": "Proyecto grafos\\ControlBateriaAntiaerea.xaml",
+              "ToolTip": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\ControlBateriaAntiaerea.xaml",
+              "RelativeToolTip": "Proyecto grafos\\ControlBateriaAntiaerea.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-23T02:42:03.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "ControlBateriaAntiaerea.xaml.cs",
               "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\ControlBateriaAntiaerea.xaml.cs",
               "RelativeDocumentMoniker": "Proyecto grafos\\ControlBateriaAntiaerea.xaml.cs",
@@ -212,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "BateriaAntiaereaViewModel.cs",
               "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\ViewModels\\BateriaAntiaereaViewModel.cs",
               "RelativeDocumentMoniker": "Proyecto grafos\\ViewModels\\BateriaAntiaereaViewModel.cs",
@@ -224,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "AlgoritmosOrdenamiento.cs",
               "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Utilities\\AlgoritmosOrdenamiento.cs",
               "RelativeDocumentMoniker": "Proyecto grafos\\Utilities\\AlgoritmosOrdenamiento.cs",
@@ -236,30 +265,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Graph.cs",
-              "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Graph.cs",
-              "RelativeDocumentMoniker": "Proyecto grafos\\Graph.cs",
-              "ToolTip": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Graph.cs",
-              "RelativeToolTip": "Proyecto grafos\\Graph.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T00:48:28.337Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\App.xaml",
               "RelativeDocumentMoniker": "Proyecto grafos\\App.xaml",
               "ToolTip": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\App.xaml",
               "RelativeToolTip": "Proyecto grafos\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-23T02:05:32.69Z"
+              "WhenOpened": "2024-11-23T02:05:32.69Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "GeneradorID.cs",
               "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Utilities\\GeneradorID.cs",
               "RelativeDocumentMoniker": "Proyecto grafos\\Utilities\\GeneradorID.cs",
@@ -271,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "RutaService.cs",
               "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Services\\RutaService.cs",
               "RelativeDocumentMoniker": "Proyecto grafos\\Services\\RutaService.cs",
@@ -283,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "MapaViewModel.cs",
               "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\ViewModels\\MapaViewModel.cs",
               "RelativeDocumentMoniker": "Proyecto grafos\\ViewModels\\MapaViewModel.cs",
@@ -295,7 +313,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Ruta.cs",
               "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Models\\Ruta.cs",
               "RelativeDocumentMoniker": "Proyecto grafos\\Models\\Ruta.cs",
@@ -304,18 +322,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T02:37:18.53Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Avion.cs",
-              "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Models\\Avion.cs",
-              "RelativeDocumentMoniker": "Proyecto grafos\\Models\\Avion.cs",
-              "ToolTip": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Models\\Avion.cs",
-              "RelativeToolTip": "Proyecto grafos\\Models\\Avion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T02:36:53.429Z"
             }
           ]
         }
