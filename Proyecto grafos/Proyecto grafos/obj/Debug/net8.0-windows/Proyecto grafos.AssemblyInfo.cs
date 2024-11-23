@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Proyecto grafos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b01aeeba0f3e40fb43df25429165f76ff62ee31e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1441337fb7a8880b02af7357d19bcf68534b3f06")]
 [assembly: System.Reflection.AssemblyProductAttribute("Proyecto grafos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Proyecto grafos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
