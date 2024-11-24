@@ -1,0 +1,18 @@
+# Archivos generados por Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Archivos de construcción
+bin/
+obj/
+
+# Archivos generados por Visual Studio Code
+.vscode/
+
+# Otros archivos temporales
+*.tmp
+*.log
+*.tmp.*
