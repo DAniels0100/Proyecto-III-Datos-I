@@ -20,7 +20,7 @@ namespace Proyecto_grafos
 
         // Variables del juego
         private DispatcherTimer gameTimer = new DispatcherTimer();
-        private int tiempoRestante = 4; // tiempo cuenta regresiva
+        private int tiempoRestante = 30; // tiempo cuenta regresiva
         private TextBlock timerTextBlock = new TextBlock(); // TextBlock que muestra el tiempo restante
         private DateTime tiempoInicio;
         private double velocidadBala;
@@ -234,7 +234,7 @@ namespace Proyecto_grafos
                 Canvas.SetTop(aeropuerto, y);
                 MapaCanvas.Children.Add(aeropuerto);
 
-                grafo.AddNode($"Aeropuerto_{i}");
+                grafo.AddNode($"Aeropuerto_{i}", x + (aeropuerto.Width / 2), y + (aeropuerto.Height / 2));
             }
 
             for (int i = 0; i < 3; i++)
@@ -253,7 +253,7 @@ namespace Proyecto_grafos
                 Canvas.SetTop(portaavion, y);
                 MapaCanvas.Children.Add(portaavion);
 
-                grafo.AddNode($"Portaavion_{i}");
+                grafo.AddNode($"Portaavion_{i}", x + (portaavion.Width / 2), y + (portaavion.Height / 2));
             }
         }
 
