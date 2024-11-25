@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Proyecto grafos.csproj": {}
+    "C:\\Users\\sealc\\OneDrive\\Escritorio\\ProyectoDatos\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Proyecto grafos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Proyecto grafos.csproj": {
+    "C:\\Users\\sealc\\OneDrive\\Escritorio\\ProyectoDatos\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Proyecto grafos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Proyecto grafos.csproj",
+        "projectUniqueName": "C:\\Users\\sealc\\OneDrive\\Escritorio\\ProyectoDatos\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Proyecto grafos.csproj",
         "projectName": "Proyecto grafos",
-        "projectPath": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Proyecto grafos.csproj",
-        "packagesPath": "C:\\Users\\j2005\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\obj\\",
+        "projectPath": "C:\\Users\\sealc\\OneDrive\\Escritorio\\ProyectoDatos\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Proyecto grafos.csproj",
+        "packagesPath": "C:\\Users\\sealc\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sealc\\OneDrive\\Escritorio\\ProyectoDatos\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\j2005\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\sealc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -42,9 +42,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "direct"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -68,7 +67,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

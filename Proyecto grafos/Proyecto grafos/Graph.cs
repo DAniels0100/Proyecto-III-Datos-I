@@ -9,9 +9,9 @@ namespace Proyecto_grafos
         public class Node
         {
             public string Name { get; }
-            public List<Edge> Edges { get; } = new List<Edge>();
-            public double X { get; } // Coordenada X del nodo
-            public double Y { get; } // Coordenada Y del nodo
+            public LinkedList<Edge> Edges { get; } = new LinkedList<Edge>();
+            public double X { get; } // X coordinate of the node
+            public double Y { get; } // Y coordinate of the node
 
             public Node(string name, double x, double y)
             {
@@ -39,7 +39,7 @@ namespace Proyecto_grafos
 
         private readonly Dictionary<string, Node> nodes = new Dictionary<string, Node>();
 
-        // Agregar nodo al diccionario
+        // Add a node to the dictionary
         public void AddNode(string name, double x = 0, double y = 0)
         {
             if (string.IsNullOrWhiteSpace(name))
@@ -53,18 +53,18 @@ namespace Proyecto_grafos
             }
         }
 
-        // Agregar una arista entre dos nodos con un peso
+        // Add an edge between two nodes with a weight
         public void AddEdge(string fromNode, string toNode, double weight, bool isDirected = false)
         {
             if (nodes.ContainsKey(fromNode) && nodes.ContainsKey(toNode))
             {
                 Node from = nodes[fromNode];
                 Node to = nodes[toNode];
-                from.Edges.Add(new Edge(to, weight));
+                from.Edges.AddLast(new Edge(to, weight));
 
                 if (!isDirected)
                 {
-                    to.Edges.Add(new Edge(from, weight));
+                    to.Edges.AddLast(new Edge(from, weight));
                 }
             }
             else
@@ -73,7 +73,7 @@ namespace Proyecto_grafos
             }
         }
 
-        // Obtener y mostrar las conexiones de cada nodo
+        // Get and display the connections of each node
         public string GetGraphRepresentation()
         {
             var sb = new System.Text.StringBuilder();
@@ -83,26 +83,26 @@ namespace Proyecto_grafos
                 sb.Append($"{node.Name}: ");
                 foreach (Edge edge in node.Edges)
                 {
-                    sb.Append($"-> {edge.Destination.Name} (peso: {edge.Weight}) ");
+                    sb.Append($"-> {edge.Destination.Name} (weight: {edge.Weight}) ");
                 }
                 sb.AppendLine();
             }
             return sb.ToString();
         }
 
-        // Método para obtener todos los nombres de los nodos
+        // Get all node names
         public IEnumerable<string> GetAllNodes()
         {
             return nodes.Keys;
         }
 
-        // Método para obtener todos los objetos Node
+        // Get all Node objects
         public IEnumerable<Node> GetAllNodeObjects()
         {
             return nodes.Values;
         }
 
-        // Método para obtener un nodo por su nombre
+        // Get a node by its name
         public Node GetNodeByName(string name)
         {
             if (nodes.TryGetValue(name, out var node))

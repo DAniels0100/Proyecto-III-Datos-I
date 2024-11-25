@@ -45,3 +45,29 @@ C:\Users\j2005\OneDrive\Documentos\GitHub\Proyecto-III-Datos-I\Proyecto grafos\P
 C:\Users\j2005\OneDrive\Documentos\GitHub\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\Proyecto grafos.pdb
 C:\Users\j2005\OneDrive\Documentos\GitHub\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\Proyecto grafos.genruntimeconfig.cache
 C:\Users\j2005\OneDrive\Documentos\GitHub\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\ref\Proyecto grafos.dll
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\bin\Debug\net8.0-windows\Proyecto grafos.exe
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\bin\Debug\net8.0-windows\Proyecto grafos.deps.json
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\bin\Debug\net8.0-windows\Proyecto grafos.runtimeconfig.json
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\bin\Debug\net8.0-windows\Proyecto grafos.dll
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\bin\Debug\net8.0-windows\Proyecto grafos.pdb
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\ControlBateriaAntiaerea.baml
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\ControlBateriaAntiaerea.g.cs
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\PanelAviones.g.cs
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\Proyecto grafos_MarkupCompile.cache
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\Proyecto grafos_MarkupCompile.lref
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\PanelAviones.baml
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\Proyecto grafos.g.resources
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\Proyecto grafos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\Proyecto grafos.AssemblyInfoInputs.cache
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\Proyecto grafos.AssemblyInfo.cs
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\Proyecto grafos.csproj.CoreCompileInputs.cache
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\Proyecto grafos.sourcelink.json
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\Proyecto grafos.dll
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\refint\Proyecto grafos.dll
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\Proyecto grafos.pdb
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\Proyecto grafos.genruntimeconfig.cache
+C:\Users\sealc\OneDrive\Escritorio\ProyectoDatos\Proyecto-III-Datos-I\Proyecto grafos\Proyecto grafos\obj\Debug\net8.0-windows\ref\Proyecto grafos.dll
