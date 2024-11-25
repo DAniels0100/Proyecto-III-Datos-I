@@ -1,5 +1,7 @@
-﻿using System;
+
+using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Threading;
 
 namespace Proyecto_grafos
@@ -11,6 +13,7 @@ namespace Proyecto_grafos
         public Graph.Node? DestinationNode { get; private set; }
         private Graph graph;
         private DispatcherTimer movimientoTimer;
+        public int Combustible { get; private set; }
 
         public Avion(string name, Graph.Node startNode, Graph graph)
         {
@@ -22,59 +25,59 @@ namespace Proyecto_grafos
             Name = name;
             CurrentNode = startNode ?? throw new ArgumentNullException(nameof(startNode));
             this.graph = graph ?? throw new ArgumentNullException(nameof(graph));
+            Combustible = 100; // Combustible inicial
 
             // Inicializar el timer para el movimiento del avión
             movimientoTimer = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(500) };
             movimientoTimer.Tick += MovimientoAvion;
         }
 
-        // Elegir un destino aleatorio para el avión
         public void SetRandomDestination()
         {
-            var nodes = new List<Graph.Node>(graph.GetAllNodeObjects());
+            var nodes = graph.GetAllNodeObjects().Where(n => n != CurrentNode).ToList();
             if (nodes.Count == 0)
             {
-                throw new InvalidOperationException("No nodes available in the graph");
+                throw new InvalidOperationException("No hay nodos disponibles en el grafo para seleccionar un destino.");
             }
 
             Random random = new Random();
-            Graph.Node destination;
-            do
-            {
-                destination = nodes[random.Next(nodes.Count)];
-            } while (destination == CurrentNode);
-
-            DestinationNode = destination;
+            DestinationNode = nodes[random.Next(nodes.Count)];
         }
 
-        // Iniciar el movimiento del avión hacia el destino
         public void StartMoving()
         {
             if (DestinationNode == null)
             {
-                throw new InvalidOperationException("Destination not set for the plane");
+                throw new InvalidOperationException("El destino no está configurado.");
             }
             movimientoTimer.Start();
         }
 
-        // Moverse hacia el nodo destino
         public void MoveToDestination()
         {
-            if (DestinationNode != null)
+            if (DestinationNode == null)
             {
-                Console.WriteLine($"{Name} is moving from {CurrentNode.Name} to {DestinationNode.Name}");
-                CurrentNode = DestinationNode;
-                DestinationNode = null; // Resetea el destino después de llegar
-                movimientoTimer.Stop();
-                SetRandomDestination(); // Elegir un nuevo destino
+                throw new InvalidOperationException("El destino no está configurado.");
             }
+
+            Console.WriteLine($"{Name} se está moviendo de {CurrentNode.Name} a {DestinationNode.Name}");
+            CurrentNode = DestinationNode;
+            DestinationNode = null; // Resetea el destino después de llegar
+            movimientoTimer.Stop();
         }
 
-        // Método privado del timer para mover el avión
         private void MovimientoAvion(object? sender, EventArgs e)
         {
             MoveToDestination();
-            StartMoving(); // Reiniciar el movimiento hacia el nuevo destino
+            RecargarCombustible();
+            SetRandomDestination();
+            StartMoving();
+        }
+
+        private void RecargarCombustible()
+        {
+            Console.WriteLine($"{Name} está recargando combustible en {CurrentNode.Name}.");
+            Combustible = Math.Min(Combustible + 50, 100); // Recarga hasta un máximo de 100
         }
     }
 }

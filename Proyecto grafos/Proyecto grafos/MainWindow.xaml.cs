@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Shapes;
@@ -7,6 +7,11 @@ using System.Windows.Threading;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Input;
+<<<<<<< Updated upstream
+=======
+using System.Windows.Media.Imaging;
+using Proyecto_grafos.Models;
+>>>>>>> Stashed changes
 
 namespace Proyecto_grafos
 {
@@ -32,6 +37,7 @@ namespace Proyecto_grafos
             this.MouseLeftButtonDown += MainWindow_MouseLeftButtonDown;
         }
 
+<<<<<<< Updated upstream
         private void MainWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DispararBala();
@@ -80,6 +86,8 @@ namespace Proyecto_grafos
             balaTimer.Start();
         }
 
+=======
+>>>>>>> Stashed changes
         private void GenerarMapa()
         {
             Random random = new Random();
@@ -92,17 +100,28 @@ namespace Proyecto_grafos
 
                 Ellipse aeropuerto = new Ellipse
                 {
+<<<<<<< Updated upstream
                     Width = 20,
                     Height = 20,
                     Fill = Brushes.Green
+=======
+                    Width = 75,
+                    Height = 75,
+                    Source = new BitmapImage(new Uri("Assets/aeropuerto.png", UriKind.Relative))
+>>>>>>> Stashed changes
                 };
 
                 Canvas.SetLeft(aeropuerto, x);
                 Canvas.SetTop(aeropuerto, y);
                 MapaCanvas.Children.Add(aeropuerto);
 
+<<<<<<< Updated upstream
                 // Añadir el aeropuerto como nodo al grafo
                 grafo.AddNode($"Aeropuerto_{i}");
+=======
+                var aeropuertoNode = new Aeropuerto($"Aeropuerto_{i}", random.Next(100, 300));
+                grafo.AddNode(aeropuertoNode);
+>>>>>>> Stashed changes
             }
 
             // Generar portaaviones aleatoriamente
@@ -113,9 +132,15 @@ namespace Proyecto_grafos
 
                 Rectangle portaavion = new Rectangle
                 {
+<<<<<<< Updated upstream
                     Width = 30,
                     Height = 15,
                     Fill = Brushes.Blue
+=======
+                    Width = 75,
+                    Height = 75,
+                    Source = new BitmapImage(new Uri("Assets/portaavion.png", UriKind.Relative))
+>>>>>>> Stashed changes
                 };
 
                 Canvas.SetLeft(portaavion, x);
@@ -141,6 +166,24 @@ namespace Proyecto_grafos
                     {
                         double peso = random.Next(10, 100); // Peso aleatorio entre 10 y 100
                         grafo.AddEdge(nodos[i].Name, nodos[j].Name, peso);
+<<<<<<< Updated upstream
+=======
+
+                        // Crear una línea entre los nodos
+                        Line ruta = new Line
+                        {
+                            X1 = nodos[i].X,
+                            Y1 = nodos[i].Y,
+                            X2 = nodos[j].X,
+                            Y2 = nodos[j].Y,
+                            Stroke = Brushes.Black,
+                            StrokeThickness = 2,
+                            StrokeDashArray = new DoubleCollection { 4, 2 }
+                        };
+
+                        // Añadir la línea al Canvas
+                        MapaCanvas.Children.Add(ruta);
+>>>>>>> Stashed changes
                     }
                 }
             }
@@ -149,12 +192,22 @@ namespace Proyecto_grafos
         private void CrearAviones()
         {
             Random random = new Random();
+<<<<<<< Updated upstream
             var nodes = grafo.GetAllNodeObjects().ToList();
+=======
+            var aeropuertos = grafo.GetAllNodeObjects()
+                .OfType<Aeropuerto>()
+                .ToList(); // Solo aeropuertos
+>>>>>>> Stashed changes
 
             // Crear 3 aviones y asignarles un nodo inicial aleatorio
             for (int i = 0; i < 3; i++)
             {
+<<<<<<< Updated upstream
                 var startNode = nodes[random.Next(nodes.Count)];
+=======
+                var startNode = aeropuertos[random.Next(aeropuertos.Count)];
+>>>>>>> Stashed changes
                 var avion = new Avion($"Avion_{i}", startNode, grafo);
                 avion.SetRandomDestination();
                 aviones.Add(avion);
@@ -162,9 +215,15 @@ namespace Proyecto_grafos
                 // Crear la representación visual del avión
                 Rectangle avionVisual = new Rectangle
                 {
+<<<<<<< Updated upstream
                     Width = 10,
                     Height = 10,
                     Fill = Brushes.Red
+=======
+                    Width = 40,
+                    Height = 40,
+                    Source = new BitmapImage(new Uri("Assets/avion.png", UriKind.Relative))
+>>>>>>> Stashed changes
                 };
 
                 Canvas.SetLeft(avionVisual, random.Next(50, 700));
@@ -184,7 +243,7 @@ namespace Proyecto_grafos
                 DispatcherTimer avionTimer = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(50) };
                 avionTimer.Tick += (s, e) =>
                 {
-                    if (avion.DestinationNode != null)
+                    if (avion.DestinationNode != null && avion.EstaActivo)
                     {
                         // Obtener la posición del nodo destino
                         double destinoX = avion.DestinationNode.X;
@@ -201,11 +260,18 @@ namespace Proyecto_grafos
 
                         if (distance < 5)
                         {
+<<<<<<< Updated upstream
                             // Si el avión está cerca del destino, detener el movimiento
                             Canvas.SetLeft(avionVisual, destinoX);
                             Canvas.SetTop(avionVisual, destinoY);
                             avion.MoveToDestination();
                             avion.SetRandomDestination();
+=======
+                            // Cuando llega a su destino
+                            Canvas.SetLeft(avionVisual, destinoX - avionVisual.Width / 2);
+                            Canvas.SetTop(avionVisual, destinoY - avionVisual.Height / 2);
+                            avion.MoveToDestination(); // Avanzar al siguiente destino
+>>>>>>> Stashed changes
                         }
                         else
                         {
@@ -241,6 +307,33 @@ namespace Proyecto_grafos
             }
 
             Canvas.SetLeft(BateriaAntiaerea, bateriaPosX);
+        }
+
+        private void MainWindow_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            // Placeholder para manejo del click
+        }
+
+        private void MainWindow_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
+        {
+            // Placeholder para manejo del click
+        }
+
+        private void GameTimer_Tick(object sender, EventArgs e)
+        {
+            tiempoRestante--;
+            timerTextBlock.Text = $"Tiempo restante: {tiempoRestante}s";
+
+            if (tiempoRestante <= 0)
+            {
+                gameTimer.Stop();
+                movimientoTimer.Stop();
+                foreach (var avion in aviones)
+                {
+                    avion.StopMoving();
+                }
+                timerTextBlock.Text = $"El tiempo se acabó";
+            }
         }
     }
 }

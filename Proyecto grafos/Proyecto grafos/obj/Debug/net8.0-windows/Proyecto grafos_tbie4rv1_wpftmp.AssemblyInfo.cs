@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Proyecto grafos")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< Updated upstream
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fe7c788e85c287ed803fe6eea6401cb9abac07dd")]
-=======
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+07a16f47cf2f33dfb92370663ea1efcb76419cb1")]
->>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("Proyecto grafos")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Proyecto grafos")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

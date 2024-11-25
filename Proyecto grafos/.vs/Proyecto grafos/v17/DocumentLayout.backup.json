@@ -5,6 +5,7 @@
     {
       "AbsoluteMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|c:\\users\\j2005\\onedrive\\documentos\\github\\proyecto-iii-datos-i\\proyecto grafos\\proyecto grafos\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|solutionrelative:proyecto grafos\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+<<<<<<< Updated upstream
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|c:\\users\\j2005\\onedrive\\documentos\\github\\proyecto-iii-datos-i\\proyecto grafos\\proyecto grafos\\models\\avion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,6 +78,8 @@
     {
       "AbsoluteMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|c:\\users\\j2005\\onedrive\\documentos\\github\\proyecto-iii-datos-i\\proyecto grafos\\proyecto grafos\\models\\ruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE91D473-3C34-451F-9A16-FB28B9EAB835}|Proyecto grafos\\Proyecto grafos.csproj|solutionrelative:proyecto grafos\\models\\ruta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -86,7 +89,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 5,
+=======
+          "SelectedChildIndex": 1,
+>>>>>>> Stashed changes
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,6 +101,7 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 10,
               "Title": "Mapa.cs",
               "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Models\\Mapa.cs",
@@ -141,12 +149,15 @@
             },
             {
               "$type": "Document",
+=======
+>>>>>>> Stashed changes
               "DocumentIndex": 0,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "Proyecto grafos\\MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\j2005\\OneDrive\\Documentos\\GitHub\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\MainWindow.xaml.cs",
               "RelativeToolTip": "Proyecto grafos\\MainWindow.xaml.cs",
+<<<<<<< Updated upstream
               "ViewState": "AgIAALYAAAAAAAAAAAAAwNIAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T02:45:34.239Z",
@@ -322,6 +333,12 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-23T02:37:18.53Z"
+=======
+              "ViewState": "AgIAABQAAAAAAAAAAAAQwDYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T20:42:50.548Z",
+              "EditorCaption": ""
+>>>>>>> Stashed changes
             }
           ]
         }
