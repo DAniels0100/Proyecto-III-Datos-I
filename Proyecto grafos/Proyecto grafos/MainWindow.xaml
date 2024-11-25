@@ -2,12 +2,58 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:local="clr-namespace:Proyecto_grafos"
-        Title="AirWar" Height="600" Width="800">
+        Title="AirWar" Height="600" Width="900">
     <Grid>
-        <Canvas Name="MapaCanvas" Background="LightBlue">
-            <!-- Añadir la batería antiaérea -->
+        <!-- Definir columnas -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <!-- Área del mapa -->
+            <ColumnDefinition Width="250" />
+            <!-- Panel lateral -->
+        </Grid.ColumnDefinitions>
+
+        <!-- Canvas para el mapa del juego -->
+        <Canvas Name="MapaCanvas" Background="LightBlue" Grid.Column="0">
+            <!-- Batería antiaérea -->
             <local:ControlBateriaAntiaerea x:Name="BateriaAntiaerea" Canvas.Left="375" Canvas.Top="550"/>
         </Canvas>
+
+        <!-- Panel lateral para listas -->
+        <DockPanel Grid.Column="1" Background="Gray">
+            <!-- Título para aviones derribados -->
+            <TextBlock Text="Aviones Derribados" FontWeight="Bold" FontSize="16" Foreground="White" Margin="5" />
+
+            <!-- ListBox para aviones derribados -->
+            <ListBox Name="AvionesDerribadosListBox" Height="200" Margin="5" 
+         SelectionChanged="AvionesDerribadosListBox_SelectionChanged">
+    <ListBox.ItemTemplate>
+        <DataTemplate>
+            <StackPanel>
+                <TextBlock Text="{Binding Name}" FontWeight="Bold" />
+                <TextBlock Text="Combustible: " />
+                <TextBlock Text="{Binding Combustible}" />
+            </StackPanel>
+        </DataTemplate>
+    </ListBox.ItemTemplate>
+</ListBox>
+
+            <!-- Título para módulos AI -->
+            <TextBlock Text="Módulos AI" FontWeight="Bold" FontSize="16" Foreground="White" Margin="5" />
+
+            <!-- ListBox para módulos AI -->
+            <ListBox Name="ModulosAIListBox" Height="200" Margin="5">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="Módulo: {Binding Rol}" FontWeight="Bold" />
+                            <TextBlock Text="ID: {Binding ID}" />
+                            <TextBlock Text="Horas de Vuelo: {Binding HorasDeVuelo}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </DockPanel>
     </Grid>
 </Window>
+
 

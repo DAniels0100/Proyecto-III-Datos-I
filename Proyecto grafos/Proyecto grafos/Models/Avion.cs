@@ -14,7 +14,7 @@ namespace Proyecto_grafos
         private DispatcherTimer movimientoTimer;
         private DispatcherTimer pausaTimer;
         public int Combustible { get; private set; }
-        public List<ModuloAI> ModulosAI { get; private set; } // Propiedad para almacenar los módulos AI
+        public List<ModuloAI> ModulosAI { get; set; }
 
         // Constructor
         public Avion(Graph.Node startNode, Graph graph)

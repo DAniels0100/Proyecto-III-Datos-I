@@ -8,6 +8,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Input;
 using System.Windows.Media.Imaging;
+using System.Collections.ObjectModel;
+using Proyecto_grafos.Models;
 
 namespace Proyecto_grafos
 {
@@ -31,10 +33,16 @@ namespace Proyecto_grafos
         private Dictionary<Avion, Image> avionVisuals = new Dictionary<Avion, Image>();
 
         //Lista de aviones derribados
-        private List<Avion> avionesDerribados = new List<Avion>();
+        private ObservableCollection<Avion> avionesDerribados = new ObservableCollection<Avion>();
 
         public MainWindow()
         {
+
+            InitializeComponent();
+
+            // Vincular la lista de aviones derribados al ListBox
+            AvionesDerribadosListBox.ItemsSource = avionesDerribados;
+
             if (tiempoRestante > 0)
             {
                 InitializeComponent();
@@ -179,10 +187,49 @@ namespace Proyecto_grafos
             avionVisuals.Remove(avion);
 
             // Mostrar información del avión destruido en la pantalla
-            MostrarInformacionAvion(avion);
+            avionesDerribados.Add(avion); // Agregar avión a la lista de derribados
+
+            MostrarAvionesDerribadosOrdenados();
 
             // Mostrar efecto de explosión
             ShowExplosion(Canvas.GetLeft(avionVisual), Canvas.GetTop(avionVisual));
+        }
+
+        private void AvionesDerribadosListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (AvionesDerribadosListBox.SelectedItem is Avion avionSeleccionado)
+            {
+                // Ordenar los módulos AI del avión seleccionado
+                OrdenadorModulosAI.SelectionSort(avionSeleccionado.ModulosAI, m => m.ID);
+
+                // Actualizar el ListBox de módulos AI
+                ModulosAIListBox.ItemsSource = null; // Limpiar para evitar errores de actualización
+                ModulosAIListBox.ItemsSource = avionSeleccionado.ModulosAI;
+            }
+        }
+
+        private void MostrarModulosAI(Avion avion)
+        {
+            // Ordenar los módulos AI del avión seleccionado por ID
+            OrdenadorModulosAI.SelectionSort(avion.ModulosAI, m => m.ID);
+
+            // Actualizar el ListBox de módulos AI
+            ModulosAIListBox.ItemsSource = null; // Limpiar el origen para evitar errores
+            ModulosAIListBox.ItemsSource = avion.ModulosAI;
+        }
+
+        private void MostrarAvionesDerribadosOrdenados()
+        {
+            var avionesOrdenados = OrdenadorAviones.MergeSort(avionesDerribados.ToList());
+
+            // Actualizar el ListBox de aviones derribados
+            AvionesDerribadosListBox.ItemsSource = avionesOrdenados;
+
+            if (avionesOrdenados.Count > 0)
+            {
+                // Llamar al método MostrarModulosAI para el primer avión
+                MostrarModulosAI(avionesOrdenados[0]);
+            }
         }
 
         // Método para mostrar la información del avión destruido
