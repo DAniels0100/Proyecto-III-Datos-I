@@ -11,6 +11,9 @@
 
   <ItemGroup>
     <Folder Include="Views\" />
+    <Resource Include="Assets\avion.png" />
+    <Resource Include="Assets\aeropuerto.png" />
+    <Resource Include="Assets\portaavion.png" />
   </ItemGroup>
 
 </Project>

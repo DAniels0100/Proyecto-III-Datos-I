@@ -30,6 +30,9 @@ namespace Proyecto_grafos
         private List<Avion> aviones = new List<Avion>();
         private Dictionary<Avion, Image> avionVisuals = new Dictionary<Avion, Image>();
 
+        //Lista de aviones derribados
+        private List<Avion> avionesDerribados = new List<Avion>();
+
         public MainWindow()
         {
             if (tiempoRestante > 0)
@@ -175,8 +178,46 @@ namespace Proyecto_grafos
             aviones.Remove(avion);
             avionVisuals.Remove(avion);
 
+            // Mostrar información del avión destruido en la pantalla
+            MostrarInformacionAvion(avion);
+
             // Mostrar efecto de explosión
             ShowExplosion(Canvas.GetLeft(avionVisual), Canvas.GetTop(avionVisual));
+        }
+
+        // Método para mostrar la información del avión destruido
+        private void MostrarInformacionAvion(Avion avion)
+        {
+            TextBlock avionInfo = new TextBlock
+            {
+                Text = $"Avión destruido: {avion.Name}\nCombustible restante: {avion.Combustible}",
+                FontSize = 14,
+                Foreground = Brushes.White,
+                Background = Brushes.Black,
+                Margin = new Thickness(10),
+                TextWrapping = TextWrapping.Wrap
+            };
+
+            // Posicionar el texto en la esquina superior derecha
+            Canvas.SetLeft(avionInfo, 10);
+            Canvas.SetTop(avionInfo, 10);
+
+            // Añadir al Canvas
+            MapaCanvas.Children.Add(avionInfo);
+
+            // Configurar un timer para eliminar el texto después de unos segundos
+            DispatcherTimer infoTimer = new DispatcherTimer
+            {
+                Interval = TimeSpan.FromSeconds(3)
+            };
+
+            infoTimer.Tick += (s, e) =>
+            {
+                infoTimer.Stop();
+                MapaCanvas.Children.Remove(avionInfo);
+            };
+
+            infoTimer.Start();
         }
 
         // Mostrar la explosión al destruir un avión
@@ -227,7 +268,7 @@ namespace Proyecto_grafos
                 {
                     Width = 75,
                     Height = 75,
-                    Source = new BitmapImage(new Uri("C:\\Users\\sealc\\OneDrive\\Escritorio\\ProyectoDatos\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Assets\\aeropuerto.png"))
+                    Source = new BitmapImage(new Uri("pack://application:,,,/Assets/aeropuerto.png"))
                 };
 
                 Canvas.SetLeft(aeropuerto, x);
@@ -246,7 +287,7 @@ namespace Proyecto_grafos
                 {
                     Width = 75,
                     Height = 75,
-                    Source = new BitmapImage(new Uri("C:\\Users\\sealc\\OneDrive\\Escritorio\\ProyectoDatos\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Assets\\portaavion.png"))
+                    Source = new BitmapImage(new Uri("pack://application:,,,/Assets/portaavion.png"))
                 };
 
                 Canvas.SetLeft(portaavion, x);
@@ -326,7 +367,7 @@ namespace Proyecto_grafos
         private void CrearAvion(Random random, List<Graph.Node> aeropuertosYPortaviones)
         {
             var startNode = aeropuertosYPortaviones[random.Next(aeropuertosYPortaviones.Count)];
-            var avion = new Avion($"Avion_{aviones.Count}", startNode, grafo);
+            var avion = new Avion(startNode, grafo);
             avion.SetRandomDestination();
             aviones.Add(avion);
 
@@ -335,7 +376,7 @@ namespace Proyecto_grafos
             {
                 Width = 60,
                 Height = 60,
-                Source = new BitmapImage(new Uri("C:\\Users\\sealc\\OneDrive\\Escritorio\\ProyectoDatos\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Assets\\avion.png"))
+                Source = new BitmapImage(new Uri("pack://application:,,,/Assets/avion.png"))
             };
 
             // Posicionar la imagen del avión

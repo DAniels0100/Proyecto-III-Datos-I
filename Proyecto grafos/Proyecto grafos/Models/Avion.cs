@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Proyecto_grafos.Models;
+using System;
 using System.Collections.Generic;
 using System.Windows.Threading;
 
@@ -11,18 +12,21 @@ namespace Proyecto_grafos
         public Graph.Node? DestinationNode { get; private set; }
         private Graph graph;
         private DispatcherTimer movimientoTimer;
-        private DispatcherTimer pausaTimer; // Temporizador para la pausa de 3 segundos
+        private DispatcherTimer pausaTimer;
+        public int Combustible { get; private set; }
+        public List<ModuloAI> ModulosAI { get; private set; } // Propiedad para almacenar los módulos AI
 
-        public Avion(string name, Graph.Node startNode, Graph graph)
+        // Constructor
+        public Avion(Graph.Node startNode, Graph graph)
         {
-            if (string.IsNullOrWhiteSpace(name))
-            {
-                throw new ArgumentException("Avion name cannot be null or empty", nameof(name));
-            }
+            Name = Guid.NewGuid().ToString(); // Genera un GUID como nombre único
 
-            Name = name;
             CurrentNode = startNode ?? throw new ArgumentNullException(nameof(startNode));
             this.graph = graph ?? throw new ArgumentNullException(nameof(graph));
+
+            // Inicializar combustible con un valor aleatorio entre 60 y 100
+            Random random = new Random();
+            Combustible = random.Next(60, 101);
 
             // Inicializar el timer para el movimiento del avión
             movimientoTimer = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(600) };
@@ -31,6 +35,9 @@ namespace Proyecto_grafos
             // Inicializar el timer para la pausa de 3 segundos
             pausaTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(3) };
             pausaTimer.Tick += PausarAntesDeDespegar;
+
+            // Inicializar los módulos AI
+            ModulosAI = CrearModulosAI();
         }
 
         // Elegir un destino aleatorio para el avión
@@ -88,6 +95,23 @@ namespace Proyecto_grafos
             pausaTimer.Stop(); // Detener el temporizador de pausa
             SetRandomDestination(); // Elegir un nuevo destino
             StartMoving(); // Iniciar el movimiento hacia el nuevo destino
+        }
+
+        private void RecargarCombustible()
+        {
+            Combustible = Math.Min(Combustible + 50, 100); // Recarga hasta un máximo de 100
+        }
+
+        //Modulos AI
+        private List<ModuloAI> CrearModulosAI()
+        {
+            return new List<ModuloAI>
+            {
+                new ModuloAI("Pilot"),
+                new ModuloAI("Copilot"),
+                new ModuloAI("Manteinance"),
+                new ModuloAI("Space Awarness")
+            };
         }
     }
 }
