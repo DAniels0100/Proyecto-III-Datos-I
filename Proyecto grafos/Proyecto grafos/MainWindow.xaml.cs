@@ -19,7 +19,7 @@ namespace Proyecto_grafos
         private DispatcherTimer movimientoTimer = new DispatcherTimer();
 
         // Variables del juego
-        private DispatcherTimer gameTimer = new DispatcherTimer();
+        private DispatcherTimer gameTimer = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(16) };
         private int tiempoRestante = 30; // tiempo cuenta regresiva
         private TextBlock timerTextBlock = new TextBlock(); // TextBlock que muestra el tiempo restante
         private DateTime tiempoInicio;
@@ -278,12 +278,13 @@ namespace Proyecto_grafos
                         // Crear una línea entre los nodos
                         Line ruta = new Line
                         {
-                            X1 = nodoA.X, // Coordenada X del primer nodo
-                            Y1 = nodoA.Y, // Coordenada Y del primer nodo
-                            X2 = nodoB.X, // Coordenada X del segundo nodo
-                            Y2 = nodoB.Y, // Coordenada Y del segundo nodo
-                            Stroke = Brushes.Black, // Color de la línea
-                            StrokeThickness = 2 // Grosor de la línea
+                            X1 = nodoA.X, 
+                            Y1 = nodoA.Y, 
+                            X2 = nodoB.X, 
+                            Y2 = nodoB.Y, 
+                            Stroke = Brushes.Black, 
+                            StrokeThickness = 2, 
+                            StrokeDashArray = new DoubleCollection { 4, 2 }
                         };
 
                         // Añadir la línea al Canvas
@@ -297,11 +298,13 @@ namespace Proyecto_grafos
         private void CrearAviones()
         {
             Random random = new Random();
-            var nodes = grafo.GetAllNodeObjects().ToList();
+            var aeropuertosYPortaviones = grafo.GetAllNodeObjects()
+                .Where(n => n.Name.Contains("Aeropuerto") || n.Name.Contains("Portaavion"))
+                .ToList();  // Filtra solo los aeropuertos y portaaviones
 
             for (int i = 0; i < 3; i++)
             {
-                var startNode = nodes[random.Next(nodes.Count)];
+                var startNode = aeropuertosYPortaviones[random.Next(aeropuertosYPortaviones.Count)];
                 var avion = new Avion($"Avion_{i}", startNode, grafo);
                 avion.SetRandomDestination();
                 aviones.Add(avion);
@@ -315,8 +318,8 @@ namespace Proyecto_grafos
                 };
 
                 // Establecer la posición del avión en el mapa
-                Canvas.SetLeft(avionVisual, random.Next(50, 700));
-                Canvas.SetTop(avionVisual, random.Next(50, 500));
+                Canvas.SetLeft(avionVisual, startNode.X - avionVisual.Width / 2); // Centrar el avión en el nodo
+                Canvas.SetTop(avionVisual, startNode.Y - avionVisual.Height / 2);
 
                 MapaCanvas.Children.Add(avionVisual);
                 avionVisuals[avion] = avionVisual;
@@ -328,7 +331,7 @@ namespace Proyecto_grafos
         {
             foreach (var avion in aviones)
             {
-                avion.StartMoving();
+                avion.StartMoving(); // Inicia el movimiento del avión
                 var avionVisual = avionVisuals[avion];
 
                 DispatcherTimer avionTimer = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(50) };
@@ -348,16 +351,17 @@ namespace Proyecto_grafos
 
                         if (distance < 5)
                         {
-                            Canvas.SetLeft(avionVisual, destinoX);
-                            Canvas.SetTop(avionVisual, destinoY);
-                            avion.MoveToDestination();
-                            avion.SetRandomDestination();
+                            // Cuando llega a su destino
+                            Canvas.SetLeft(avionVisual, destinoX - avionVisual.Width / 2);
+                            Canvas.SetTop(avionVisual, destinoY - avionVisual.Height / 2);
+                            avion.MoveToDestination(); // Avanzar al siguiente destino
+                            avion.SetRandomDestination(); // Elegir un nuevo destino aleatorio
                         }
                         else
                         {
+                            // Mover el avión hacia el destino
                             double moveX = deltaX / distance * 5;
                             double moveY = deltaY / distance * 5;
-
                             Canvas.SetLeft(avionVisual, currentX + moveX);
                             Canvas.SetTop(avionVisual, currentY + moveY);
                         }
