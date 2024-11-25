@@ -11,6 +11,7 @@ namespace Proyecto_grafos
         public Graph.Node? DestinationNode { get; private set; }
         private Graph graph;
         private DispatcherTimer movimientoTimer;
+        private DispatcherTimer pausaTimer; // Temporizador para la pausa de 3 segundos
 
         public Avion(string name, Graph.Node startNode, Graph graph)
         {
@@ -24,8 +25,12 @@ namespace Proyecto_grafos
             this.graph = graph ?? throw new ArgumentNullException(nameof(graph));
 
             // Inicializar el timer para el movimiento del avión
-            movimientoTimer = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(500) };
+            movimientoTimer = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(600) };
             movimientoTimer.Tick += MovimientoAvion;
+
+            // Inicializar el timer para la pausa de 3 segundos
+            pausaTimer = new DispatcherTimer { Interval = TimeSpan.FromSeconds(3) };
+            pausaTimer.Tick += PausarAntesDeDespegar;
         }
 
         // Elegir un destino aleatorio para el avión
@@ -62,11 +67,12 @@ namespace Proyecto_grafos
         {
             if (DestinationNode != null)
             {
-                Console.WriteLine($"{Name} is moving from {CurrentNode.Name} to {DestinationNode.Name}");
                 CurrentNode = DestinationNode;
                 DestinationNode = null; // Resetea el destino después de llegar
                 movimientoTimer.Stop();
-                SetRandomDestination(); // Elegir un nuevo destino
+
+                // Iniciar la pausa de 3 segundos antes de elegir un nuevo destino
+                pausaTimer.Start();
             }
         }
 
@@ -74,7 +80,14 @@ namespace Proyecto_grafos
         private void MovimientoAvion(object? sender, EventArgs e)
         {
             MoveToDestination();
-            StartMoving(); // Reiniciar el movimiento hacia el nuevo destino
+        }
+
+        // Método privado para manejar la pausa de 3 segundos
+        private void PausarAntesDeDespegar(object? sender, EventArgs e)
+        {
+            pausaTimer.Stop(); // Detener el temporizador de pausa
+            SetRandomDestination(); // Elegir un nuevo destino
+            StartMoving(); // Iniciar el movimiento hacia el nuevo destino
         }
     }
 }

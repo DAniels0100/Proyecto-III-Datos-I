@@ -302,28 +302,88 @@ namespace Proyecto_grafos
                 .Where(n => n.Name.Contains("Aeropuerto") || n.Name.Contains("Portaavion"))
                 .ToList();  // Filtra solo los aeropuertos y portaaviones
 
-            for (int i = 0; i < 3; i++)
+            // Crear los tres aviones iniciales
+            for (int i = 0; i < 0; i++)
             {
-                var startNode = aeropuertosYPortaviones[random.Next(aeropuertosYPortaviones.Count)];
-                var avion = new Avion($"Avion_{i}", startNode, grafo);
-                avion.SetRandomDestination();
-                aviones.Add(avion);
-
-                // Crear la imagen
-                Image avionVisual = new Image
-                {
-                    Width = 40,
-                    Height = 40,
-                    Source = new BitmapImage(new Uri("C:\\Users\\sealc\\OneDrive\\Escritorio\\ProyectoDatos\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Assets\\avion.png"))
-                };
-
-                // Establecer la posición del avión en el mapa
-                Canvas.SetLeft(avionVisual, startNode.X - avionVisual.Width / 2); // Centrar el avión en el nodo
-                Canvas.SetTop(avionVisual, startNode.Y - avionVisual.Height / 2);
-
-                MapaCanvas.Children.Add(avionVisual);
-                avionVisuals[avion] = avionVisual;
+                CrearAvion(random, aeropuertosYPortaviones);
             }
+
+            // Configurar un timer para generar aviones cada 3 segundos
+            DispatcherTimer avionTimer = new DispatcherTimer
+            {
+                Interval = TimeSpan.FromSeconds(3)
+            };
+
+            avionTimer.Tick += (s, e) =>
+            {
+                CrearAvion(random, aeropuertosYPortaviones);
+            };
+
+            avionTimer.Start();
+        }
+
+        // Método auxiliar para crear un avión y añadirlo al juego
+        private void CrearAvion(Random random, List<Graph.Node> aeropuertosYPortaviones)
+        {
+            var startNode = aeropuertosYPortaviones[random.Next(aeropuertosYPortaviones.Count)];
+            var avion = new Avion($"Avion_{aviones.Count}", startNode, grafo);
+            avion.SetRandomDestination();
+            aviones.Add(avion);
+
+            // Crear la imagen del avión
+            Image avionVisual = new Image
+            {
+                Width = 60,
+                Height = 60,
+                Source = new BitmapImage(new Uri("C:\\Users\\sealc\\OneDrive\\Escritorio\\ProyectoDatos\\Proyecto-III-Datos-I\\Proyecto grafos\\Proyecto grafos\\Assets\\avion.png"))
+            };
+
+            // Posicionar la imagen del avión
+            Canvas.SetLeft(avionVisual, startNode.X - avionVisual.Width / 2);
+            Canvas.SetTop(avionVisual, startNode.Y - avionVisual.Height / 2);
+
+            // Añadir al Canvas y al diccionario de visuales
+            MapaCanvas.Children.Add(avionVisual);
+            avionVisuals[avion] = avionVisual;
+
+            // Iniciar el movimiento del avión
+            IniciarMovimientoAvion(avion, avionVisual);
+        }
+
+        // Método para iniciar el movimiento individual de un avión
+        private void IniciarMovimientoAvion(Avion avion, Image avionVisual)
+        {
+            DispatcherTimer avionTimer = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(50) };
+            avionTimer.Tick += (s, e) =>
+            {
+                if (avion.DestinationNode != null)
+                {
+                    double destinoX = avion.DestinationNode.X;
+                    double destinoY = avion.DestinationNode.Y;
+
+                    double currentX = Canvas.GetLeft(avionVisual);
+                    double currentY = Canvas.GetTop(avionVisual);
+
+                    double deltaX = destinoX - currentX;
+                    double deltaY = destinoY - currentY;
+                    double distance = Math.Sqrt(deltaX * deltaX + deltaY * deltaY);
+
+                    if (distance < 5)
+                    {
+                        Canvas.SetLeft(avionVisual, destinoX - avionVisual.Width / 2);
+                        Canvas.SetTop(avionVisual, destinoY - avionVisual.Height / 2);
+                        avion.MoveToDestination(); // Avanzar al siguiente destino
+                    }
+                    else
+                    {
+                        double moveX = deltaX / distance * 2; // Velocidad de movimiento
+                        double moveY = deltaY / distance * 2;
+                        Canvas.SetLeft(avionVisual, currentX + moveX);
+                        Canvas.SetTop(avionVisual, currentY + moveY);
+                    }
+                }
+            };
+            avionTimer.Start();
         }
 
 
@@ -374,7 +434,7 @@ namespace Proyecto_grafos
 
         private void IniciarMovimientoBateria()
         {
-            movimientoTimer.Interval = TimeSpan.FromMilliseconds(50);
+            movimientoTimer.Interval = TimeSpan.FromMilliseconds(20);
             movimientoTimer.Tick += MovimientoBateriaAntiaerea;
             movimientoTimer.Start();
         }
